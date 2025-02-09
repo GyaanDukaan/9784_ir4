@@ -1,0 +1,71 @@
+main.cpp: In instantiation of ‘bool ConcurrentHashMap<K, V>::testDisplay() const [with K = std::__cxx11::basic_string<char>; V = int]’:
+main.cpp:119:9:   required from ‘void ConcurrentHashMap<K, V>::test() [with K = std::__cxx11::basic_string<char>; V = int]’
+main.cpp:251:23:   required from here
+main.cpp:159:15: warning: passing ‘const ConcurrentHashMap<std::__cxx11::basic_string<char>, int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+  159 |         insert("TEST", Order<K, V>(10, 2));
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:52:10: note:   in call to ‘void ConcurrentHashMap<K, V>::insert(const K&, Order<K, V>&&) [with K = std::__cxx11::basic_string<char>; V = int]’
+   52 |     void insert(const K& symbol, Order<K, V>&& order) {
+      |          ^~~~~~
+main.cpp: In instantiation of ‘bool ConcurrentHashMap<K, V>::testPriceRange() const [with K = std::__cxx11::basic_string<char>; V = int]’:
+main.cpp:120:9:   required from ‘void ConcurrentHashMap<K, V>::test() [with K = std::__cxx11::basic_string<char>; V = int]’
+main.cpp:251:23:   required from here
+main.cpp:166:15: warning: passing ‘const ConcurrentHashMap<std::__cxx11::basic_string<char>, int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+  166 |         insert("TEST", Order<K, V>(10, 2));
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:52:10: note:   in call to ‘void ConcurrentHashMap<K, V>::insert(const K&, Order<K, V>&&) [with K = std::__cxx11::basic_string<char>; V = int]’
+   52 |     void insert(const K& symbol, Order<K, V>&& order) {
+      |          ^~~~~~
+main.cpp:167:15: warning: passing ‘const ConcurrentHashMap<std::__cxx11::basic_string<char>, int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+  167 |         insert("TEST", Order<K, V>(20, 5));
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:52:10: note:   in call to ‘void ConcurrentHashMap<K, V>::insert(const K&, Order<K, V>&&) [with K = std::__cxx11::basic_string<char>; V = int]’
+   52 |     void insert(const K& symbol, Order<K, V>&& order) {
+      |          ^~~~~~
+main.cpp:168:15: warning: passing ‘const ConcurrentHashMap<std::__cxx11::basic_string<char>, int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+  168 |         insert("TEST", Order<K, V>(30, 1));
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:52:10: note:   in call to ‘void ConcurrentHashMap<K, V>::insert(const K&, Order<K, V>&&) [with K = std::__cxx11::basic_string<char>; V = int]’
+   52 |     void insert(const K& symbol, Order<K, V>&& order) {
+      |          ^~~~~~
+Time taken for initial inserts: 0.000475699 seconds
+Time taken for additional inserts: 7.4345e-05 seconds
+ICICIBANK: {lotSize: 10, price: 2} 
+LT: {lotSize: 10, price: 2} 
+SBIN: {lotSize: 10, price: 2} 
+INFY: {lotSize: 10, price: 2} 
+HINDUNILVR: {lotSize: 10, price: 2} 
+TCS: {lotSize: 10, price: 2} 
+HDFCBANK: {lotSize: 10, price: 2} {lotSize: 15, price: 4} 
+BAJFINANCE: {lotSize: 10, price: 2} 
+RELIANCE: {lotSize: 10, price: 2} 
+NESTLEIND: {lotSize: 30, price: 2} 
+Time taken for display: 5.8666e-05 seconds
+Time taken for removal: 4.052e-05 seconds
+ICICIBANK: {lotSize: 10, price: 2} 
+LT: {lotSize: 10, price: 2} 
+SBIN: {lotSize: 10, price: 2} 
+INFY: {lotSize: 10, price: 2} 
+HINDUNILVR: {lotSize: 10, price: 2} 
+TCS: {lotSize: 10, price: 2} 
+HDFCBANK: {lotSize: 10, price: 2} {lotSize: 15, price: 4} 
+BAJFINANCE: {lotSize: 10, price: 2} 
+RELIANCE: {lotSize: 10, price: 2} 
+Time taken for display after removal: 2.0804e-05 seconds
+Price range for HDFCBANK: {2, 4}
+Time taken for getting price range: 5.9954e-05 seconds
+ICICIBANK: {lotSize: 10, price: 2} 
+LT: {lotSize: 10, price: 2} 
+SBIN: {lotSize: 10, price: 2} 
+INFY: {lotSize: 10, price: 2} 
+HINDUNILVR: {lotSize: 10, price: 2} 
+TCS: {lotSize: 10, price: 2} 
+HDFCBANK: {lotSize: 10, price: 2} {lotSize: 15, price: 4} 
+TEST: {lotSize: 10, price: 2} 
+BAJFINANCE: {lotSize: 10, price: 2} 
+RELIANCE: {lotSize: 10, price: 2} 
+Time taken for tests: 2.873e-05 seconds
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
